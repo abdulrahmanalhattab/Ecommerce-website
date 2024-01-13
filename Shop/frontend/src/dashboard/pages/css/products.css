@@ -1,0 +1,29 @@
+/* border-collapse: collapse; */
+
+.Product > div:nth-child(1) ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.Product > div:nth-child(1) ul > li{
+    margin: 0 15px;
+    font-family: 'Comfortaa', sans-serif;
+    cursor: pointer;
+    transition: color 1s ease;
+}
+.Product > div:nth-child(1) ul > li:nth-child(1){
+    border-bottom: 3px solid #A1662F;
+}
+
+.Product > div:nth-child(1) ul > li:hover{
+    color: #A1662F;
+}
+
+
+@media (max-width: 430px){
+    .Product > div:nth-child(1) ul > li{
+        font-size: 12px;
+        margin: 15px 5px 0;
+    }
+}
