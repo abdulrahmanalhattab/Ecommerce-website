@@ -1,0 +1,197 @@
+.ContactPage{
+    margin-top: 150px;
+    background-color: #00000035;
+}
+
+.ContactPage > h2{
+    color: #A1662F;
+    font-family: 'Lilita One', sans-serif;
+    padding-top: 35px;
+    font-size: 45px;
+    text-align: center;
+    /* background-color: red; */
+}
+
+
+.ContactPage > div{
+    /* background-color: #4d2a09; */
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    /* height: 100vh; */
+    margin: 0 auto;
+
+}
+.ContactPage > div > img{
+    width: 400px;
+    height: 500px;
+}
+
+.contactCard{
+    width: 100%;
+}
+
+
+.contactCard > div{
+    width: 400px;
+}
+
+.contactCard > div > div:nth-child(1){
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #000;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 1s ease;
+    margin: 25px 0;
+}
+
+.contactCard > div > div:nth-child(1):hover{
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.contactCard > div > div:nth-child(1) > div:nth-child(2){
+    width: 50%;
+}
+
+.contactCard > div > div:nth-child(1) > span{
+    background-color: #A1662F;
+    color: #fff;
+    font-size: 35px;
+    width: 20%;
+    height: 70%;
+    text-align: center;
+    margin: auto 15px;
+    border-radius: 25px;
+
+}
+
+.contactCard > div > div:nth-child(1) > span img{
+    width: 35px;
+    height: 35px;
+}
+
+.contactCard > div > div:nth-child(1) > span svg,
+.contactCard > div > div:nth-child(1) > span img{
+    margin-top: 25%;
+}
+
+.contactCard > div > div:nth-child(1) > div{
+    margin: auto 0;
+    font-size: 20px;
+    font-family: 'Lilita One', sans-serif;
+    color: #A1662F;
+}
+
+.contactCard > div > div:nth-child(1) > div:nth-child(3){
+    margin-left: 10%;
+    margin-top: 12%;
+}
+
+
+.contactCard > div > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #A1662F;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: height 1s ease;
+    
+}
+
+.contactCard > div > div:nth-child(2) > div:nth-child(1){
+    text-align: center;
+    font-family: 'Lilita One', sans-serif;  
+    font-size: 16px;  
+    margin-top: 10px;
+}
+
+.contactCard > div > div:nth-child(2) > div:nth-child(1) span
+{
+    color: #4d2a09;
+    display: inline-flex;
+    transition: color 1s ease;
+}
+
+.contactCard > div > div:nth-child(2) > div:nth-child(1) svg{
+    margin-left: 10px;
+}
+.contactCard > div > div:nth-child(2){
+    box-shadow: 0 0 5px #000;
+}
+
+.contactCard > div > div:nth-child(2) > div:nth-child(2) > span{
+    font-size: 25px;
+    color: #4d2a09;
+    transition: color 1s ease;
+}
+
+
+.contactCard > div > div:nth-child(2) > div:nth-child(1) span:hover,
+.contactCard > div > div:nth-child(2) > div:nth-child(2) > span:hover{
+    cursor: pointer;
+    color:#000000b6;
+}
+
+
+
+@media (max-width: 1024px){
+    .ContactPage > div{
+        width: 95%;
+    }
+}
+
+@media (max-width: 884px){
+    .ContactPage > div > img{
+        width: 300px;
+        height: 400px;
+    }
+
+    .contactCard > div{
+        width: 300px;
+    }
+
+    .contactCard > div > div:nth-child(1){
+        height: 8vh;
+        width: 100%;
+    }
+
+    .contactCard > div > div:nth-child(1) > span{
+        font-size: 30px;
+    }
+    .contactCard > div > div:nth-child(1) > span > img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .contactCard > div > div:nth-child(2){
+        margin-bottom: 5px;
+    }
+}
+
+
+@media (max-width: 430px){
+    .contact{
+        width: 100%;
+    }
+    .ContactPage > div > img{
+        display: none;
+    }
+
+    .contactCard > div{
+        width: 100%;
+    }
+
+    .contactCard > div > div:nth-child(1){
+        height: 13vh;
+    }
+}

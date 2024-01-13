@@ -1,0 +1,222 @@
+/* border-collapse: collapse; */
+
+.TableMembers {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.TableMembers table {
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 0 0 5px #000;
+  margin-top: 30px;
+}
+
+.TableMembers table thead tr {
+  background-color: #a1662f;
+}
+
+.TableMembers table thead tr td {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 13px;
+  padding: 10px 5px;
+  color: #fff;
+}
+
+.TableMembers table tbody tr td {
+  padding: 15px 5px;
+  width: 10%;
+}
+
+.TableMembers table tbody tr td:nth-child(1),
+.TableMembers table thead tr td:nth-child(1) {
+  width: 1%;
+  text-align: center;
+}
+
+.TableMembers table tbody tr td:nth-child(5),
+.TableMembers table tbody tr td:nth-child(6),
+.TableMembers table thead tr td:nth-child(5),
+.TableMembers table thead tr td:nth-child(6) {
+  width: 5%;
+  text-align: center;
+}
+
+.TableMembers table tbody tr td:nth-child(7),
+.TableMembers table tbody tr td:nth-child(8),
+.TableMembers table thead tr td:nth-child(7),
+.TableMembers table thead tr td:nth-child(8) {
+  width: 2%;
+  text-align: center;
+}
+
+.TableMembers table tbody tr td svg {
+  font-size: 17px;
+  transition: 1s color ease;
+  cursor: pointer;
+}
+
+.TableMembers table tbody tr td svg:hover {
+  color: #a1662f;
+}
+
+.TableMembers table tbody tr {
+  border-bottom: 1px solid #0000008f;
+}
+
+.TableMembers > div:nth-child(2) {
+  width: 7%;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px auto 0;
+}
+
+.TableMembers > div:nth-child(2) svg {
+  font-size: 20px;
+  transition: color 1s ease;
+  cursor: pointer;
+}
+
+.TableMembers > div:nth-child(2) svg:hover {
+  color: #a1662f;
+}
+.newMember {
+  text-align: center;
+}
+.newMember span {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 600;
+  color: #4d2a09;
+  border-bottom: 3px solid #4d2a09;
+  padding-bottom: 5px;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+.newMember span:hover {
+  color: #a1662f;
+  border-bottom: 3px solid #a1662f;
+}
+
+.EditMemberModal,
+.DeleteMemberModal {
+  background-color: #0000006b;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.EditMemberModal > div,
+.DeleteMemberModal > div {
+  width: 30%;
+  height: 60%;
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 0 auto;
+  box-shadow: 0 0 5px #000;
+  overflow: hidden;
+}
+
+.EditMemberModal > div h2 {
+  font-size: 23px;
+  font-family: "Comfortaa", sans-serif;
+  color: #a1662f;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.EditMemberModal > div > div {
+  text-align: center;
+}
+
+.EditMemberModal > div > div p {
+  text-align: start;
+  margin: 0 3%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #4d2a09;
+  margin-top: 25px;
+}
+
+.EditMemberModal > div > div input {
+  width: 90%;
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 25px;
+  border: 2px solid #4d2a09;
+  padding: 0 10px;
+}
+
+.EditMemberModal > div > div select {
+  width: 95%;
+  height: 30px;
+  border-radius: 25px;
+  border: 2px solid #4d2a09;
+  padding: 0 10px;
+}
+
+.EditMemberModal > div > div > input {
+  width: 20%;
+  background-color: #4d2a09;
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 13px;
+  margin: 20px 10px 0;
+  transition: 1s ease background;
+  border: none;
+  cursor: pointer;
+}
+
+.EditMemberModal > div > div > input:hover {
+  background-color: #a1662f;
+}
+
+.DeleteMemberModal > div {
+  width: 80%;
+  height: 35vh;
+}
+
+.DeleteMemberModal > div > div:nth-child(1) > h2 {
+  color: #a1662f;
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.DeleteMemberModal > div > div:nth-child(3) {
+  display: flex;
+  justify-content: center;
+}
+
+.DeleteMemberModal > div > div:nth-child(3) > input {
+  margin: 20px 10px 0;
+  width: 10%;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  color: #fff;
+  background-color: #4d2a09;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  cursor: pointer;
+  transition: 1s background ease;
+}
+
+.DeleteMemberModal > div > div:nth-child(3) > input:hover {
+  background-color: #a1662f;
+}
+
+@media (max-width: 884px) {
+  .TableMembers > div:nth-child(2) {
+    width: 15%;
+  }
+}
+
+@media (max-width: 430px) {
+  .TableMembers > div:nth-child(1) {
+    overflow-x: scroll;
+  }
+}

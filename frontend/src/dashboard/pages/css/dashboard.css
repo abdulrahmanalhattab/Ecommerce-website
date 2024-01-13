@@ -1,0 +1,85 @@
+.Cards-dash{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Cards-dash > div{
+    margin: 0 1%;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 0 5px #000;
+    width: 20%;
+    height: 15vh;
+    border-bottom: 3px solid #A1662F;
+    cursor: pointer;
+    transition: margin 1s ease;
+}
+
+.Cards-dash > div:hover{
+    margin-top: 1%;
+}
+.Cards-dash > div > div{
+    margin: auto;
+}
+.Cards-dash > div > div p:nth-child(1){
+    font-size: 23px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #A1662F;
+}
+
+.Cards-dash > div > div p:nth-child(2){
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    margin-top: 15%;
+}
+
+
+.Cards-dash > div > svg{
+    font-size: 45px;
+    margin: auto;
+    color: #A1662F;
+}
+
+@media (max-width: 884px){
+    .Cards-dash > div{
+        height: 10%;
+    }
+
+    .Cards-dash > div > div p:nth-child(1){
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 430px){
+    .Cards-dash{
+        display: block;
+    }
+    
+    .Cards-dash > div{
+        width: 95%;
+        margin: 4% auto;
+        transition: 1s;
+    }
+
+    .Cards-dash > div:hover{
+        margin-top: 4%;
+        background-color: #a1662f65;
+    }
+
+    .Cards-dash > div > svg{
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 320px){
+    .Cards-dash > div{
+        height: 15%;
+    }
+    .Cards-dash > div > svg{
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,230 @@
+.CreateProduct {
+  margin-top: 2%;
+  width: 100%;
+}
+
+.CardProduct {
+  width: 30%;
+  margin: 0 auto;
+  height: 70vh;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 0 5px #000;
+}
+
+.CardProduct > div:nth-child(1) {
+  width: 100%;
+  height: 40%;
+  position: relative;
+  cursor: pointer;
+}
+
+.CardProduct > div:nth-child(1) img {
+  width: 100%;
+  height: 100%;
+}
+
+.CardProduct > div:nth-child(1) div {
+  position: absolute;
+  background-color: #0000009f;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  text-align: center;
+  margin: auto 0;
+  opacity: 0;
+  transition: 1s;
+}
+
+.CardProduct > div:nth-child(1) div p {
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  height: 100%;
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.CardProduct > div:nth-child(1):hover div {
+  opacity: 1;
+  height: 100%;
+}
+
+.CardProduct > div:nth-child(2) {
+  width: 100%;
+  height: 50%;
+  border-bottom: 2px solid #000;
+  border-top: 2px solid #000;
+}
+
+.CardProduct > div:nth-child(2) > div:nth-child(1) {
+  width: 100%;
+  height: 100%;
+}
+.CardProduct > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+  margin: 10px 5px;
+  display: flex;
+}
+.CardProduct > div:nth-child(2) > div:nth-child(1) > div input:nth-child(1) {
+  width: 70%;
+  height: 30px;
+  border-radius: 25px;
+  border: 2px solid #a1662f;
+  padding: 0 5px;
+  outline: none;
+}
+
+.CardProduct > div:nth-child(2) > div:nth-child(1) > div input:nth-child(2) {
+  width: 20%;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #4d2a09;
+  color: #fff;
+  border: none;
+  transition: background 1s ease;
+  margin: 0 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.CardProduct
+  > div:nth-child(2)
+  > div:nth-child(1)
+  > div
+  input:nth-child(2):hover {
+  cursor: pointer;
+  background-color: #a1662f;
+}
+
+.CardProduct > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) p {
+  font-size: 15px;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 600;
+}
+
+.CardProduct
+  > div:nth-child(2)
+  > div:nth-child(1)
+  > div:nth-child(2)
+  p
+  span
+  svg {
+  transition: 1s color ease;
+}
+.CardProduct
+  > div:nth-child(2)
+  > div:nth-child(1)
+  > div:nth-child(2)
+  p
+  span
+  svg:hover {
+  color: #a1662f;
+  cursor: pointer;
+}
+
+.CardProduct > div:nth-child(3) {
+  display: flex;
+  width: 100%;
+  height: 13%;
+}
+
+.CardProduct > div:nth-child(3) div {
+  text-align: center;
+  width: 100%;
+  height: 70%;
+  margin: auto 0;
+}
+.CardProduct > div:nth-child(3) div input {
+  width: 25%;
+  height: 60%;
+  text-align: center;
+  border: 2px solid #a1662f;
+  margin: 0 5px;
+  border-radius: 15px;
+  outline: none;
+}
+
+.CreateProduct > div:nth-child(2) {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.CreateProduct > div:nth-child(2) > input {
+  background-color: #4d2a09;
+  width: 150px;
+  height: 35px;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  box-shadow: 0 0 5px #000;
+  transition: 1s background ease;
+  cursor: pointer;
+}
+
+.CreateProduct > div:nth-child(2) > input:hover {
+  background-color: #a1662f;
+}
+
+@media (max-width: 884px) {
+  .CardProduct {
+    width: 70%;
+  }
+}
+
+@media (max-width: 430px) {
+  .CardProduct {
+    height: 60vh;
+    width: 90%;
+    margin-top: 10%;
+  }
+
+  .CardProduct > div:nth-child(2) {
+    height: 40%;
+  }
+  .CardProduct > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) p {
+    font-size: 13px;
+  }
+
+  .CardProduct > div:nth-child(3) {
+    height: 70%;
+  }
+  .CardProduct > div:nth-child(3) div {
+    margin-top: 2%;
+    height: 8%;
+  }
+
+  .CardProduct > div:nth-child(3) div input {
+    width: 20%;
+    padding: 0 10px;
+    font-size: 10px;
+    border-radius: 5px;
+  }
+
+  .CardProduct > div:nth-child(2) > div:nth-child(1) > div input:nth-child(1) {
+    height: 30px;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+
+  .CardProduct > div:nth-child(2) > div:nth-child(1) > div input:nth-child(2) {
+    height: 35px;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+
+  .CreateProduct > div:nth-child(2) > input {
+    font-size: 12px;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 321px) {
+  .CardProduct {
+    max-height: 80vh;
+    width: 90%;
+    height: 80vh;
+    margin-top: 10%;
+  }
+}
